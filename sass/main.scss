@@ -1,0 +1,37 @@
+// imports go first -> grabb _vars and any other partials
+@import '_vars';
+@import 'modules/_navbar';
+
+body 
+{
+    background-color: $body-bg;
+    color: $main-color;
+}
+
+h1, h2, h3 
+{
+    color: $heading-color;
+}
+
+.panel
+{
+    min-height: 80vh;
+}
+
+.panel:nth-child(even)
+{
+    background-color: salmon;
+    color: $main-color;
+}
+
+#to-top
+{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: none;
+}
+
+@import 'modules/_footer';
+
+// import media queries here
